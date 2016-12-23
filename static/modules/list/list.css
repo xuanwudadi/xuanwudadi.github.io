@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.header{
+	height: 60px;
+	background: green;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+}
+.header div.arrow-container{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.header div.login{
+	float: right;
+	margin-right: 10px;
+}
+.header div.login a{
+	color: #fff;
+}
+.arrow-container span{
+	position: absolute;
+	left: -4px;
+    top: 10px;
+	border: 20px solid transparent;
+	border-right: 20px solid #fff;
+}
+.arrow-container span.green{
+	left: -17px;
+    top: -20px;
+	border-right: 20px solid green;
+}
+
+.search{
+	display: -webkit-box;
+	height: 40px;
+	padding: 8px;
+}
+.search input{
+	-webkit-box-flex: 1;
+	display: block;
+	width: 100%;
+	height: 40px;
+	border: 1px solid green;
+}
+.search span{
+	display: inline-block;
+	width: 60px;
+	height: 40px;
+	background: green;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+}
+
+ul.nav{
+	display: -webkit-box;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #666;
+	margin-top: 20px;
+}
+ul.nav.fixed{
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #fff;
+	margin-top: 0;
+}
+ul.nav li{
+	-webkit-box-flex: 1;
+}
+ul.nav h4.on{
+	color: green;
+}
+ul.nav li.on{
+	background: green;
+	color: #fff;
+}
+.image-list{
+	display: -webkit-box;
+	margin-top: 10px;
+}
+.image-list .left,.image-list .right{
+	width: 50%;
+	/*padding: 3px;*/
+}
+.image-list img{
+	display: block;
+	width: 100%;
+	padding: 3px;
+}
+
+/*返回顶部*/
+.returnTop{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 30px;
+	height: 80px;
+	background: url("../../../images/top.png");
+	background-size: 30px 80px;
+}

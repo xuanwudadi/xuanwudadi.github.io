@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content="initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+	<title>backbone项目实战</title>
+	<script src='static/sea.js'></script>
+	<script src='static/lib/seajs-css.js'></script>
+	<script src='static/lib/zepto.js'></script>
+	<script src='static/lib/zepto.touch.js'></script>
+	<script type='text/javascript' src='static/lib/underscore.js'></script>
+	<script src='static/lib/backbone.js'></script>
+	<script type='text/template' id='tpl'>
+		<header class="header layer-h">
+			<div class="arrow-container">
+				<span class="arrow"><span class="arrow green black"></span></span>
+			</div>
+			<h2><%=title%></h2>
+		</header>
+		<div class="layerContainer"><img src="<%=url%>" alt="" /></div>
+	</script>
+</head>
+<body>
+	<div id="app">
+		<section class="list" style="display:none">
+			<header class='header'>
+				<div class="arrow-container">
+					<span class="arrow"><span class="arrow green"></span></span>
+				</div>
+				<div class="login">
+					<a href="#">登录</a>
+				</div>
+				<h1 class="title">我的图片网</h1>
+			</header>
+			<div class="search clearfix">
+				<input type="text" placeholder='请输入你喜欢的图片'>
+				<span id="btn">搜一搜</span>
+			</div>
+			<ul class="nav">
+				<h4 class="on">全部</h4>
+				<li data-type="摄影">摄影</li>
+				<li data-type="明星">明星</li>
+				<li data-type="壁纸">壁纸</li>
+				<li data-type="宠物">宠物</li>
+				<li data-type="动漫">动漫</li>
+				<li data-type="风景">风景</li>
+				<li data-type="头像">头像</li>
+				<li data-type="人物">人物</li>
+			</ul>
+			<div class="image-list">
+				<div class="left">
+				</div>
+				<div class="right">
+				</div>
+			</div>
+			<div class="returnTop"></div>
+		</section>
+		<section class="layer">
+			
+		</section>
+	</div>
+	<script>
+		seajs.use('app',function (app) {
+			app();
+		});
+	</script>
+</body>
+</html>

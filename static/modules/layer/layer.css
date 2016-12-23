@@ -1,0 +1,38 @@
+.header.layer-h{
+	background: #000;
+}
+.header span.green.black{
+	border-right-color: #000;
+}
+.layer{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+}
+.layer h2{
+	font-size: 18px;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.layerContainer{
+	position: absolute;
+	left: 0;
+	top: 60px;
+	right: 0;
+	bottom: 0;
+}
+.layerContainer img{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	max-height: 100%;
+}
